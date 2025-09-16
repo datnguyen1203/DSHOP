@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Dell/OneDrive/Desktop/NextJS/d-shop/src/app/productdetail/%5Bslug%5D/page.js"],"sourcesContent":["export async function generateStaticParams() {\r\n    const books = [\r\n        { slug: 'one-pieces' },\r\n        { slug: 'naruto' },\r\n        { slug: 'bleach' }\r\n    ];\r\n\r\n    return books.map((book) => ({\r\n        slug: book.slug\r\n    }))\r\n}\r\n\r\nexport default function Page({ product }) {\r\n    return <div>\r\n        <h1>Bạn đang xem sách: {product.name}</h1>\r\n    </div>\r\n}"],"names":[],"mappings":";;;;;;;;AAAO,eAAe;IAClB,MAAM,QAAQ;QACV;YAAE,MAAM;QAAa;QACrB;YAAE,MAAM;QAAS;QACjB;YAAE,MAAM;QAAS;KACpB;IAED,OAAO,MAAM,GAAG,CAAC,CAAC,OAAS,CAAC;YACxB,MAAM,KAAK,IAAI;QACnB,CAAC;AACL;AAEe,SAAS,KAAK,EAAE,OAAO,EAAE;IACpC,qBAAO,8OAAC;kBACJ,cAAA,8OAAC;;gBAAG;gBAAoB,QAAQ,IAAI;;;;;;;;;;;;AAE5C","debugId":null}}]
+}
